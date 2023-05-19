@@ -1,0 +1,9 @@
+CREATE TABLE if not exists usuarios (
+  id BIGINT,
+  nombre VARCHAR(40),
+  apellido VARCHAR(40),
+  celular VARCHAR(40),
+  correo VARCHAR(40),
+  clave VARCHAR(40)
+);
+show tables;
