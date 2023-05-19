@@ -1,0 +1,18 @@
+insert into usuarios (id, nombre,apellido, celular, correo,clave) 
+values(1,"sabrina","techera",'1136980222', 'sabrina@gmail.com',"1234");
+insert into usuarios (id, nombre,apellido, celular, correo,clave) 
+values(2,"sofia","sosa",'113765s438', 'saf@gmail.com',"5678");
+insert into usuarios (id, nombre,apellido, celular, correo,clave) 
+values(3,"erica","perez",'11456789', 'eri@gmail.com',"9101");
+insert into usuarios (id, nombre,apellido, celular, correo,clave) 
+values(4,"naty","garcia",'11567483', 'nat@gmail.com',"1112");
+insert into usuarios (id, nombre,apellido, celular, correo,clave) 
+values(5,"augus","martinez",'1189765432', 'tucu@gmail.com',"1314");
+select*from usuarios;
+update usuarios set apellido= "Cordoba" where id =3;
+delete from usuarios where id=3;
+
+select nombre, apellido from usuarios;
+select id, apellido, correo from usuarios order by apellido desc;
+select id,apellido from usuarios where id>=3;
+select count(distinct correo) from usuarios; 
